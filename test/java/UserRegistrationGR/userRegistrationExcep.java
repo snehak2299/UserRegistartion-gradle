@@ -1,8 +1,8 @@
 package UserRegistrationGR;
-import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 public class userRegistrationExcep {
 	@Test
@@ -10,7 +10,7 @@ public class userRegistrationExcep {
 		UserRegistration validater=new UserRegistration();
 		String custom;
 		try {
-			custom=validater.validateFirstName1("Kshtija31");
+			custom=validater.validateFirstName1("Sneha02");
 		}catch(ValidateException e) {
 			assertEquals("valid firstName ",e.getMessage());
 			
@@ -44,7 +44,7 @@ public class userRegistrationExcep {
 		UserRegistration validater=new UserRegistration();
 		String custom;
 		try {
-			custom=validater.validateFirstName1("ksh");
+			custom=validater.validateFirstName1("sneh");
 		}catch(ValidateException e) {
 			assertEquals("firstName cannot be empty",e.getMessage());
 			
@@ -56,7 +56,7 @@ public class userRegistrationExcep {
 		UserRegistration validater=new UserRegistration();
 		String custom;
 		try {
-			custom=validater.validateFirstName1("Kshtija@");
+			custom=validater.validateFirstName1("Sneha@");
 		}catch(ValidateException e) {
 			assertEquals("invalid firstName ",e.getMessage());
 			
@@ -67,7 +67,7 @@ public class userRegistrationExcep {
 		UserRegistration validater=new UserRegistration();
 		String custom;
 		try {
-			custom=validater.validateFirstName1("Kshtija31");
+			custom=validater.validateFirstName1("Sneha02");
 		}catch(ValidateException e) {
 			assertEquals("invalid firstName ",e.getMessage());
 			
@@ -82,7 +82,7 @@ public class userRegistrationExcep {
 			UserRegistration validater=new UserRegistration();
 			String custom;
 			try {
-				custom=validater.validateLastName1("Patil");
+				custom=validater.validateLastName1("Kanase");
 			}catch(ValidateException e) {
 				assertEquals("valid lastName ",e.getMessage());
 				
@@ -116,7 +116,7 @@ public class userRegistrationExcep {
 			UserRegistration validater=new UserRegistration();
 			String custom;
 			try {
-				custom=validater.validateLastName1("pat");
+				custom=validater.validateLastName1("ka");
 			}catch(ValidateException e) {
 				assertEquals("invalid lastname",e.getMessage());
 				
@@ -128,7 +128,7 @@ public class userRegistrationExcep {
 			UserRegistration validater=new UserRegistration();
 			String custom;
 			try {
-				custom=validater.validateLastName1("Patil@");
+				custom=validater.validateLastName1("Kanase@");
 			}catch(ValidateException e) {
 				assertEquals("invalid lastname",e.getMessage());
 				
@@ -139,7 +139,7 @@ public class userRegistrationExcep {
 			UserRegistration validater=new UserRegistration();
 			String custom;
 			try {
-				custom=validater.validateLastName1("Patil31");
+				custom=validater.validateLastName1("Kanase02");
 			}catch(ValidateException e) {
 				assertEquals("invalid lastname",e.getMessage());
 				
@@ -152,7 +152,7 @@ public class userRegistrationExcep {
 				UserRegistration validater=new UserRegistration();
 				String custom;
 				try {
-					custom=validater.validateMobile1("+91 9919819801");
+					custom=validater.validateMobile1("+91 9890989090");
 				}catch(ValidateException e) {
 					assertEquals("valid Mobile ",e.getMessage());
 					
@@ -186,7 +186,7 @@ public class userRegistrationExcep {
 				UserRegistration validater=new UserRegistration();
 				String custom;
 				try {
-					custom=validater.validateMobile1("+91 991981");
+					custom=validater.validateMobile1("+91 9577");
 				}catch(ValidateException e) {
 					assertEquals("invalid Mobile",e.getMessage());
 					
@@ -198,7 +198,7 @@ public class userRegistrationExcep {
 				UserRegistration validater=new UserRegistration();
 				String custom;
 				try {
-					custom=validater.validateMobile1("+91 991@819801");
+					custom=validater.validateMobile1("+91 9@801");
 				}catch(ValidateException e) {
 					assertEquals("invalid Mobile",e.getMessage());
 					
@@ -209,7 +209,7 @@ public class userRegistrationExcep {
 				UserRegistration validater=new UserRegistration();
 				String custom;
 				try {
-					custom=validater.validateMobile1("+91 991K819801");
+					custom=validater.validateMobile1("+91 901i246");
 				}catch(ValidateException e) {
 					assertEquals("invalid Mobile",e.getMessage());
 					
@@ -279,7 +279,7 @@ public class userRegistrationExcep {
 				UserRegistration validater=new UserRegistration();
 				String custom;
 				try {
-					custom=validater.validateEmail1("Patil31");
+					custom=validater.validateEmail1("Kanase31");
 				}catch(ValidateException e) {
 					assertEquals("invalid Email",e.getMessage());
 					
