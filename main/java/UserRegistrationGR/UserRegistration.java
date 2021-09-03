@@ -1,7 +1,10 @@
 package UserRegistrationGR;
 import java.util.regex.Pattern;
 
-
+@FunctionalInterface
+interface IRegistration{
+	boolean validate(String pattern);
+}
 
 public class UserRegistration {
 	private static final String NAME_PATTERN = "^[A-Z][a-z]{3,}";
